@@ -377,7 +377,7 @@ The following is a sample of using the WordCountListRunner on the provided file 
 Reading in File: inputFiles_DoNotSubmit/harry_potter.txt
 Removing common words
 Printing the top 10 words  on console
-Dursley(37) Mr.(29) Mrs.(19) --(13) people(12) cat(8) he'd(8) Dudley(7) owls(7) called(6)
+dursley(37) mr.(29) mrs.(19) --(13) people(12) he'd(8) cat(8) owls(7) dudley(7) thought(6)
 
 > java WordCountListRunner harry_potter.txt 10 file
 
@@ -386,7 +386,7 @@ Removing common words
 Printing the top 10 words  in file a named myOutput.out
 
 > cat myOutput.out
-Dursley(37) Mr.(29) Mrs.(19) --(13) people(12) cat(8) he'd(8) Dudley(7) owls(7) called(6) 
+dursley(37) mr.(29) mrs.(19) --(13) people(12) he'd(8) cat(8) owls(7) dudley(7) thought(6)
 ```
 
 ## Similarity Checker (Sample Output)

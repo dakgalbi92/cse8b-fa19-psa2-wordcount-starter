@@ -1,7 +1,6 @@
 /**
  *  WordCountListRunner
- *  Author: Alan Kuo
- *  Date: 04/08/2018
+ *  Author: Alan Kuo, 2018 & Madeline, 2019
  *
  *  Class to test run a WordCountList. The class expects two command line arguments:
  *  argument[0] is filename
@@ -56,12 +55,13 @@ public class WordCountListRunner {
     System.out.println("Removing common words");
     w.removeWords("commonWords.txt");
     
-    boolean printToFile = option.equals("file")?true:false; 
+    boolean printToConsole = option.equals("console")?true:false; 
     
-    System.out.println("Printing the top " + n + " words " + (printToFile==true?"in a file named myOutput.out.":"on console."));
+    System.out.println("Printing the top " + n + " words " + (printToConsole ?"on console.":"in a file named myOutput.out."));
+
     w.list = w.topKWords(n);
-    w.outputWords(printToFile);
-    
+    w.outputWords(printToConsole);
+
   }
 
 }
